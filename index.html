@@ -28,6 +28,101 @@
     .about{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;padding:15px 0 110px}.about h2{font-size:clamp(40px,5vw,72px);line-height:1;margin:0}.about p{max-width:640px}
     footer{border-top:1px solid var(--ink);padding:22px 0 45px;display:flex;justify-content:space-between;gap:20px;font-size:11px}
     @media(max-width:700px){header{align-items:flex-start}.nav{gap:12px;flex-wrap:wrap;justify-content:flex-end}.hero{padding:90px 0}h1{font-size:clamp(64px,15vw,110px)}.project,.about{grid-template-columns:1fr}.project{gap:22px}.project h3{font-size:52px}.projects{padding-bottom:45px}.about{padding-bottom:70px}}
+ 
+/* AUDIO PROJECT PLAYLIST */
+
+.portfolio-audio {
+  max-width: 720px;
+  margin: 60px 0;
+  color: #171717;
+}
+
+.portfolio-audio-header {
+  margin-bottom: 32px;
+}
+
+.audio-category {
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: #777;
+}
+
+.portfolio-audio-header h2 {
+  font-family: "EB Garamond", serif;
+  font-size: 38px;
+  font-weight: 400;
+  margin: 12px 0 8px;
+}
+
+.portfolio-audio-header p {
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  color: #777;
+}
+
+/* PLAYER */
+
+#portfolio-player {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* TRACKLIST */
+
+.portfolio-tracklist {
+  border-top: 1px solid #ddd;
+}
+
+.portfolio-track {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  padding: 17px 4px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+}
+
+.portfolio-track:hover {
+  background: #f5f5f5;
+}
+
+.track-number {
+  width: 24px;
+  color: #999;
+  font-size: 11px;
+}
+
+.track-name {
+  flex: 1;
+}
+
+.track-indicator {
+  opacity: 0;
+  font-size: 10px;
+}
+
+.portfolio-track.active .track-indicator {
+  opacity: 1;
+}
+
+.portfolio-track.active .track-name {
+  font-weight: 600;
+}
+
+.portfolio-track:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
   </style>
 </head>
 <body>
